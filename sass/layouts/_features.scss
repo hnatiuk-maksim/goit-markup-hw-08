@@ -1,10 +1,19 @@
 .card-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .card-list__item {
-    flex-basis: calc((100% - 90px) / 4);
+    width: 100%;
+    @include tablet {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include desktop { 
+        flex-basis: calc((100% - 90px) / 4);
+        }
 }
+
 .card-list__icon-container {
     height: 120px;
     align-items: center;
@@ -21,6 +30,9 @@
     @include font (700, 14px, 1.14, 0.03em);  
     text-transform: uppercase;
     color: var(--title-text-color);
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
 }
 .card-list__text {
     @include font (400, 14px, 1.71, 0.03em);

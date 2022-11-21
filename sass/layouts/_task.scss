@@ -1,3 +1,10 @@
+.picture-section {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
 .picture-list {
     display: flex;
     gap: 30px;
