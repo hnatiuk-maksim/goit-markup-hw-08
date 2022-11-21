@@ -1,0 +1,23 @@
+.picture-list {
+    display: flex;
+    gap: 30px;
+}
+
+.picture-list__item {
+    position: relative;
+}
+
+.picture-list__text {
+    
+    width: 370px;
+    height: 70px;
+    padding: 27px;
+    color: var(--hero-title-color);
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+
+    @include font (700, 14px, 1.14, 0.03em);  
+    text-align: center;  
+    text-transform: uppercase;
+}

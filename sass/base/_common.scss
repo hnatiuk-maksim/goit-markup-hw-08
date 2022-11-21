@@ -1,0 +1,21 @@
+body {
+  background: var(--page-back-color);
+  font-family: "Roboto", sans-serif;  
+  color: var(--primary-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &:nth-child(3) {
+        padding-top: 0;
+    }
+}

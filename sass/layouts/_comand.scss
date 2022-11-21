@@ -1,0 +1,62 @@
+.comand { 
+    background: var(--command-back-color);
+}
+.comand-list {
+    display: flex;
+    gap: 30px;
+}
+.comand-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--hero-title-color);
+}
+.comand-photo {
+    margin-bottom: 30px;
+}
+.comand-name {
+    margin-bottom: 10px;
+
+    @include font (500, 16px, 1.18, 0.03em);
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.comand-text {
+    margin-bottom: 16px;
+
+    @include font (400, 16px, 1.18, 0.03em);  
+    text-align: center;
+}
+
+.comand-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.comand-soc-item {
+    width: 44px;
+    height: 44px;
+}
+.comand-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: var(--comand-soc-hover);
+    }
+}
+
+.comand-soc-icon {
+    fill: var(--comand-soc-link);
+.comand-soc-link:hover &,
+.comand-soc-link:focus & {
+    fill: var(--color-soc-footer);
+    }
+}

@@ -1,0 +1,19 @@
+@import "./utils/vars";
+
+@import "./base/reset";
+@import "./utils/mixins";
+@import "./base/common";
+@import "./utils/hidden";
+
+@import "./components/container";
+@import "./components/section-title";
+@import "./components/modal";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/task";
+@import "./layouts/comand";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio";
