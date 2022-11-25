@@ -455,17 +455,13 @@ body {
 }
 
 .hero {
-  text-align: center;
-  background: var(--hero-back-color);
-  padding: 200px 0;
+  padding: 118px 0;
+  max-width: 100%;
 }
 
 .bg {
-  width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img101.jpg);
+  background: var(--hero-back-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -475,10 +471,10 @@ body {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  width: 696px;
+  max-width: 300px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -486,14 +482,14 @@ body {
 }
 
 .hero-btn {
-  min-width: 216px;
+  min-width: 200px;
   height: 50px;
   border: none;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
   background: var(--accent-text-color);
