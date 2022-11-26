@@ -1,20 +1,59 @@
 .page-footer {
     padding: 60px 0;
     background: var(--footer-back-color);
-    & .container {
-    display: flex;
-    align-items: baseline;
-    }
+    
     & .header-logo {
-    display: inline-block;
+    display: inline-flex;    
     margin-bottom: 20px;
+    
+    @include font (700, 24px, 1.17, 0.03em);
+    color: var(--hero-title-color);
+    @include desktop {
+        @include font (700, 26px, 1.19, 0.03em);
+    }
+    }    
+}
 
-    color: var(--hero-title-color); 
+.footer-container {
+    text-align: center;
+    align-items: baseline;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }   
+}
+
+.address-soc-wrap {
+    margin-bottom: 60px;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        padding-left: 61px;
+        padding-right: 74px;
+    }
+    @include desktop {
+        gap: 70px;
+        padding: 0;
+        margin: 0;
     }
 }
 
+.address-container {
+    margin-bottom: 60px;
+    
+    @include tablet {
+        margin-bottom: 0;
+    }    
+}
+
 .footer-list .item + .item {
-    margin-top: 9px;
+    margin-top: 8px;
+    @include desktop {
+        margin-top: 9px;
+    }
 }
 
 .address-link {
@@ -41,9 +80,10 @@
     }
 }
 
-.footer-soc {  
-    margin-left: 70px;  
-}
+// .footer-soc {  
+//     margin-left: 70px;
+//     margin-bottom: 60px;  
+// }
 
 .footer-soc-title {
     display: inline-block; 
@@ -57,6 +97,7 @@
 .footer-soc-list {
     display: flex;  
     gap: 10px;
+    justify-content: center;
 }
 
 .footer-soc-item {
@@ -88,9 +129,7 @@
     }
 }
 
-.send-container {
-    margin-left: auto;
-}
+
 .send-title {
     margin-bottom: 20px;
 
@@ -101,13 +140,22 @@
 
 .user-send {
     margin: 0;
-    display: flex;
+        
+    @include desktop {
+        display: flex;
+        gap: 12px;
+    }
 }
 
 .send-input {
-    width: 358px;
+    width: 100%;
+    @include mobile {
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+    }
     height: 50px;
-    margin-right: 12px;
     padding-left: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,9 +175,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 0;
+    
+    
+    @include desktop {        
+        margin: 0;
+    }
+    
     padding: 0;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
     min-width: 200px;
     height: 50px;
     border: none;
